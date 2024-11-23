@@ -61,16 +61,16 @@ The project was implemented in stages as per the assignment requirements:
 
 
 ## How to Run the Application
-### Prerequisites
 - **Ruby:** Ensure you have Ruby installed (version 2.6.6 or higher).
 - **Rails:** Install Rails framework.
 - **Database Setup:** SQLite3 for development.
 
+
 ## Steps to Run
-Clone the Repository:
-   '```bash
-      git clone https://github.com/ChristosGkovaris/Treegram-App.git
-      cd Treegram-App
+- Clone the Repository:
+  ```bash
+     git clone https://github.com/ChristosGkovaris/Treegram-App.git
+     cd Treegram-App
 
 
 ## Collaboration
