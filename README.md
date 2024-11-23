@@ -67,8 +67,8 @@ The project was implemented in stages as per the assignment requirements:
 - **Database Setup:** SQLite3 for development.
 
 ## Steps to Run
-**Clone the Repository:**
-   ```bash
+Clone the Repository:
+   '```bash
       git clone https://github.com/ChristosGkovaris/Treegram-App.git
       cd Treegram-App
 
