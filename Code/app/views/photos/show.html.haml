@@ -1,0 +1,7 @@
+%h1 Photo Details
+= image_tag @photo.image.url
+%p
+  %strong Title:
+  = @photo.title
+%h2 Thumbnail
+= image_tag @photo.image.url(:thumb)
