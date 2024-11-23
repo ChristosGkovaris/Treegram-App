@@ -49,14 +49,14 @@ The project was implemented in stages as per the assignment requirements:
 
 ## Project Structure
 - **Models:**
-  - `User`: Manages user data and relationships.
-  - `Photo`: Represents photos uploaded by users, with validations for titles and dependencies on comments and tags.
-  - `Comment`: Handles user comments on photos with proper associations.
-  - `Follow`: Defines follower-followed relationships between users.
+  `User`: Manages user data and relationships.
+  `Photo`: Represents photos uploaded by users, with validations for titles and dependencies on comments and tags.
+  `Comment`: Handles user comments on photos with proper associations.
+  `Follow`: Defines follower-followed relationships between users.
 - **Controllers:**
-  - `UsersController`: Manages user profiles, follows/unfollows, and feeds.
-  - `PhotosController`: Handles photo uploads, viewing, and deletion.
-  - `CommentsController`: Manages adding and deleting comments.
+  `UsersController`: Manages user profiles, follows/unfollows, and feeds.
+  `PhotosController`: Handles photo uploads, viewing, and deletion.
+  `CommentsController`: Manages adding and deleting comments.
 - **Views:** Dynamic views for user profiles, photo feeds, and interactions.
 
 
