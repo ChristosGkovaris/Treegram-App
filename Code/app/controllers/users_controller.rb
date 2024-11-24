@@ -27,7 +27,7 @@ class UsersController < ApplicationController
     @users = User.all
     @all_users = User.all
     @photos = (@user.photos + @user.followed_users.includes(:photos).flat_map(&:photos)).sort_by(&:created_at).reverse
-    @comment = Comment.new # Δημιουργεί νέο αντικείμενο για τη φόρμα σχολίων
+    @comment = Comment.new
   end
 
 
