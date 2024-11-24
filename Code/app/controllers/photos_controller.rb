@@ -3,7 +3,6 @@ class PhotosController < ApplicationController
   def destroy
     @photo = Photo.find(params[:id])
 
-    # Ελέγχουμε αν ο χρήστης είναι ο ιδιοκτήτης της φωτογραφίας
     if current_user == @photo.user
       @photo.destroy
       flash[:notice] = "Photo and all related comments and tags were successfully deleted!"
