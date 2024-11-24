@@ -16,7 +16,6 @@ class CommentsController < ApplicationController
     @comment = Comment.find(params[:id])
     @photo = @comment.photo
 
-    # Ελέγχουμε αν ο χρήστης έχει δικαίωμα διαγραφής
     if current_user == @comment.user || current_user == @photo.user
       @comment.destroy
       flash[:notice] = "Comment deleted successfully!"
