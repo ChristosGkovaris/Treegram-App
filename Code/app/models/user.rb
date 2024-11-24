@@ -2,15 +2,12 @@ class User < ActiveRecord::Base
   has_many :photos
   has_many :tags
 
-  # Συσχετίσεις για ακολουθούμενους χρήστες (followed_users)
   has_many :follows_as_follower, class_name: 'Follow', foreign_key: 'follower_id'
   has_many :followed_users, through: :follows_as_follower, source: :followed
 
-  # Συσχετίσεις για ακόλουθους χρήστες (followers)
   has_many :follows_as_followed, class_name: 'Follow', foreign_key: 'followed_id'
   has_many :followers, through: :follows_as_followed, source: :follower
 
-  # Υπάρχουσες μέθοδοι και validations
   attr_accessor :password
   has_attached_file :avatar, styles: { medium: "300x300>", thumb: "100x100>" }
   validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\Z/
