@@ -26,11 +26,15 @@ class UsersController < ApplicationController
     @tag = Tag.new
     @users = User.all
     @all_users = User.all
-    @photos = (@user.photos + @user.followed_users.includes(:photos).flat_map(&:photos)).sort_by(&:created_at).reverse
-    @comment = Comment.new
+
+    if current_user == @user
+      @photos = (current_user.photos + current_user.followed_users.includes(:photos).flat_map(&:photos)).uniq.sort_by(&:created_at).reverse
+    else
+      @photos = @user.photos.order(created_at: :desc)
+    end
+
+    @comment = Comment.new 
   end
-
-
 
   def follow
     user_to_follow = User.find(params[:id])
@@ -40,7 +44,7 @@ class UsersController < ApplicationController
       current_user.followed_users << user_to_follow
       flash[:notice] = "You are now following #{user_to_follow.email}!"
     end
-    redirect_to user_path(user_to_follow)
+    redirect_to user_path(current_user)
   end
 
   def unfollow
@@ -51,7 +55,7 @@ class UsersController < ApplicationController
     else
       flash[:alert] = "You are not following this user."
     end
-    redirect_to user_path(user_to_unfollow)
+    redirect_to user_path(current_user)
   end
 
   private

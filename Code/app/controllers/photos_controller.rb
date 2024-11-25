@@ -1,5 +1,5 @@
 class PhotosController < ApplicationController
-  
+
   def destroy
     @photo = Photo.find(params[:id])
 
@@ -17,21 +17,21 @@ class PhotosController < ApplicationController
   end
 
   def create
-    @user = User.find(params[:user_id])
     if params[:photo].nil?
       flash[:alert] = "Please upload a photo"
       redirect_to :back
     else
-      @photo = Photo.create(photo_params)
-      @photo.user_id = @user.id
-      @photo.save
-      flash[:notice] = "Successfully uploaded a photo"
-      redirect_to user_path(@user)
+      @photo = current_user.photos.new(photo_params)
+      if @photo.save
+        flash[:notice] = "Successfully uploaded a photo"
+      else
+        flash[:alert] = "Failed to upload photo. Please try again."
+      end
+      redirect_to user_path(current_user)
     end
   end
 
   def new
-    @user = User.find(params[:user_id])
     @photo = Photo.new
   end
 
