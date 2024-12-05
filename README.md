@@ -7,7 +7,6 @@ Welcome to "Treegram App", a social media platform where users can share photos,
 Treegram is a simplified social network designed as part of an educational assignment to implement essential functionalities such as photo uploads, comments, following/unfollowing users, and user management.
 
 
-
 ## Key Features
 - Photo Management: Users can upload photos, assign titles, and manage their own content.
 - Comments System: Users can add, view, and delete comments on photos, with appropriate permissions for managing comments.
