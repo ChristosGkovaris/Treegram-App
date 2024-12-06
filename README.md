@@ -1,4 +1,5 @@
 # Treegram App
+
 Welcome to "Treegram App", a social media platform where users can share photos, interact through comments, and build connections by following other users. This application is built using Ruby on Rails and provides essential features for a photo-sharing platform, including advanced functionality such as user following, commenting, and photo management. Additionally, it incorporates a Slide Show Feature that allows users to view photos in a dynamic, sequential manner, enhancing the user experience with seamless transitions and intuitive navigation. This project was implemented during the seventh semester, in the course MYE042 of the curriculum of the University of Ioannina. The final grade of the first project (advanced photo sharing features) is X out of 100 and the final grade of the second project (slide show feature) is X out of 100.
 
 
