@@ -6,14 +6,12 @@
  * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
  *
  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
+ * compiled file so the styles you add here take precedence over styles defined in the other CSS/SCSS files in this directory.
+ * It is generally better to create a new file per style scope.
  *
  *= require_tree .
  *= require_self
  */
-
 
 body
   font-family: 'Open Sans Condensed', sans-serif
@@ -44,3 +42,109 @@ a
   position: fixed
   left: 0
   margin-left: 15px
+
+
+/* Styles for Photo Gallery */
+.photo-gallery
+  display: flex
+  flex-direction: column
+  gap: 20px
+
+.user-photo
+  position: relative
+  display: inline-block
+
+.user-photo img
+  max-width: 100%
+  border: 2px solid #ccc
+  border-radius: 8px
+
+.photo-title
+  margin-top: 5px
+  text-align: left
+  font-weight: normal
+  color: #333
+
+.hidden-title
+  display: none
+
+.active-title
+  display: block
+
+
+/* Styles for Slideshow */
+.slideshow-container
+  position: relative
+  max-width: 100%
+  margin: auto
+  overflow: hidden
+
+.mySlides
+  display: none
+  text-align: center
+
+.mySlides img
+  width: 100%
+  border-radius: 8px
+
+
+/* Styles for Modal */
+/* Κεντράρισμα του modal και overlay */
+#comment-modal 
+  display: none /* Αρχικά κρυφό */
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 1001
+  background-color: white
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+  border-radius: 8px
+  width: 20%
+  height: auto /* Ύψος προσαρμοσμένο στο περιεχόμενο */
+  padding: 10px
+  max-height: 60vh
+  overflow-y: auto
+
+#comment-modal-overlay 
+  display: none /* Αρχικά κρυφό */
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, 0.5) /* Σκούρο ημιδιαφανές φόντο */
+  z-index: 1000
+
+
+/* Κουμπί κλεισίματος */
+.close-btn 
+  position: absolute
+  top: 10px
+  right: 10px
+  background: red
+  color: white
+  border: none
+  padding: 5px 10px
+  cursor: pointer
+  border-radius: 4px
+
+.close-btn:hover 
+  background: darkred
+
+
+/* Περιεχόμενο σχολίων */
+#modal-comments p 
+  margin-bottom: 10px
+  font-size: 14px
+
+#comment-modal h3 
+  margin-bottom: 10px
+  text-align: center
+  font-weight: bold
+
+
+/* Adjustments for Mobile */
+@media (max-width: 768px)
+  #comment-modal
+    width: 80%
