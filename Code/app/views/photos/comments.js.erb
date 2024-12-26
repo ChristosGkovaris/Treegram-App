@@ -1,8 +1,0 @@
-// Ενημερώνει τα σχόλια στο modal
-document.getElementById('modal-comments').innerHTML = "<%= j render partial: 'comments/comment', collection: @comments, as: :comment %>";
-
-// Ενημερώνει το hidden field με το photo_id
-document.getElementById('photo-id-field').value = "<%= @photo.id %>";
-
-// Εμφανίζει το modal
-document.getElementById('comment-modal').style.display = "block";
