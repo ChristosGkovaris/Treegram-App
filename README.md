@@ -34,7 +34,6 @@ The project was implemented in stages as per the assignment requirements:
 
 
 ## Implementation Details
-**Technologies Used**
 - Backend Framework: Ruby on Rails
 - Database SQLite3 (development) and ActiveRecord for migrations and queries
 - Frontend: HTML and HAML templates for dynamic rendering
