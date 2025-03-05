@@ -48,16 +48,5 @@ The project was implemented in stages as per the assignment requirements:
 
 
 
-## Steps to Run
-- Clone the Repository:
-  ```bash
-     git clone https://github.com/ChristosGkovaris/Treegram-App.git
-     cd Treegram-App
-- Ruby: Ensure you have Ruby installed (version 2.6.6 or higher)
-- Rails: Install Rails framework
-- Database Setup: SQLite3 for development
-
-
-
 ## Collaboration
 This project was a collaborative effort. Special thanks to [SpanouMaria](https://github.com/SpanouMaria), for the significant contributions to the development and improvement of the application.
