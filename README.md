@@ -1,9 +1,18 @@
 # Treegram App
-Welcome to "Treegram App", a social media platform where users can share photos, interact through comments, and build connections by following other users. This application is built using Ruby on Rails and provides essential features for a photo-sharing platform, including advanced functionality such as user following, commenting, and photo management. Additionally, it incorporates a Slide Show Feature that allows users to view photos in a dynamic, sequential manner, enhancing the user experience with seamless transitions and intuitive navigation. This project was implemented during the seventh semester, in the course MYE042 of the curriculum of the University of Ioannina. The final grade of the first project (advanced photo sharing features) is 105 out of 100 and the final grade of the second project (slide show feature) is 90 out of 100.
+Welcome to "Treegram App" repository. This repository contains a social media platform where users can share photos, interact through comments, and build connections
+by following other users. This application is built using Ruby on Rails and provides essential features for a photo-sharing platform, including advanced functionality
+such as user following, commenting, and photo management. Additionally, it incorporates a Slide Show Feature that allows users to view photos in a dynamic, sequential
+manner, enhancing the user experience with seamless transitions and intuitive navigation. This project was implemented during the seventh semester, in the course
+MYE042 of the curriculum of the University of Ioannina. The final grade of the first project (advanced photo sharing features) is X out of 100 and the final grade
+of the second project (slide show feature) is X out of 100.
 
 
-## Application Overview
-Treegram is a streamlined social networking application developed as part of an educational assignment, showcasing core functionalities such as photo uploads, user comments, following and unfollowing users, and comprehensive user management. Additionally, it incorporates advanced features like a Slide Show Mode, enabling dynamic and interactive viewing of photos, further enriching the user experience with intuitive navigation and seamless transitions.
+
+## Overview
+Treegram is a streamlined social networking application developed as part of an educational assignment, showcasing core functionalities such as photo uploads,
+user comments, following and unfollowing users, and comprehensive user management. Additionally, it incorporates advanced features like a Slide Show Mode,
+enabling dynamic and interactive viewing of photos, further enriching the user experience with intuitive navigation and seamless transitions.
+
 
 
 ## Key Features
@@ -14,7 +23,8 @@ Treegram is a streamlined social networking application developed as part of an 
 - Photo Deletion: Users can delete their own photos along with all related comments and tags.
 
 
-## Assignment Instructions
+
+## Instructions
 The project was implemented in stages as per the assignment requirements:
 **Stage 1: Add Titles to Photos**
 - Extend the `Photo` model to include a `title` attribute.
@@ -33,6 +43,7 @@ The project was implemented in stages as per the assignment requirements:
 - Display a "Delete Photo" button next to each photo if the user owns it.
 
 
+
 ## Implementation Details
 - Backend Framework: Ruby on Rails
 - Database SQLite3 (development) and ActiveRecord for migrations and queries
@@ -40,30 +51,16 @@ The project was implemented in stages as per the assignment requirements:
 - Authentication: Custom user authentication system with secure password storage
 
 
-## Project Structure
-- **Models:**
-  `User`: Manages user data and relationships.
-  `Photo`: Represents photos uploaded by users, with validations for titles and dependencies on comments and tags.
-  `Comment`: Handles user comments on photos with proper associations.
-  `Follow`: Defines follower-followed relationships between users.
-- **Controllers:**
-  `UsersController`: Manages user profiles, follows/unfollows, and feeds.
-  `PhotosController`: Handles photo uploads, viewing, and deletion.
-  `CommentsController`: Manages adding and deleting comments.
-- **Views:** Dynamic views for user profiles, photo feeds, and interactions.
-
-
-## How to Run the Application
-- **Ruby:** Ensure you have Ruby installed (version 2.6.6 or higher).
-- **Rails:** Install Rails framework.
-- **Database Setup:** SQLite3 for development.
-
 
 ## Steps to Run
 - Clone the Repository:
   ```bash
      git clone https://github.com/ChristosGkovaris/Treegram-App.git
      cd Treegram-App
+- Ruby: Ensure you have Ruby installed (version 2.6.6 or higher)
+- Rails: Install Rails framework
+- Database Setup: SQLite3 for development
+
 
 
 ## Collaboration
